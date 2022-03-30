@@ -51,6 +51,21 @@
         <Route path='*' element={NotFound}></Route>
       </Routes>
     </div>
+ 
+## Video 3
+### 52-3 Load Users, display users, dynamic link, use Navigate
 
+## dynamic Route 
 
+###  useNavigate() function
+    let navigate = useNavigate();
+ 
+### use Even Handler 
+        const showFriendDetail = () => {
+            const path = `/friend/${id}`
+            navigate(path);
+        }
+
+## link between function and button 
+<button onClick={showFriendDetail}>{username} id: {id}</button>
 
