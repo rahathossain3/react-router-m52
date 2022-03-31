@@ -91,11 +91,39 @@ Video 6
 2.
    <Link to={`/friend/${value}`}>Show detail</Link>;
 
-### ........ params
+### ........ params ----   Route parameter
+
   
    const params = useParams();
    const { friendId } = useParams();
 
+
 ### return code 
    <h2>This is Detail about Dosto: {friendId} </h2>
+
+## Video 7
+
+## FriendDetail.js customs data load from api
+<!-- ----------- -->
+#### optional ching ()
+
+   <p><small>City: {friend.address?.city}</small></p>
+    <p><small>Lat: {friend.address?.geo?.lat}</small></p>
+
+<!-- ------------ -->
+
+
+
+
+
+# Devtool problem solving
+
+    import ReactDOM from 'react-dom/client';
+
+
+    ReactDOM.createRoot(document.getElementById("root")).render(
+    <React.StrictMode>
+    <App />
+    </React.StrictMode>
+    );
 

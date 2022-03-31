@@ -19,8 +19,11 @@ function App() {
         {/*---------- Route path = "path name"  element ={<component name/>}></Route>--------- */}
         <Route path="/" element={<Home />}></Route>
         <Route path='/friends' element={<Friends />}></Route>
+
+        {/* for dynamic part--- */}
         {/* path="/flexed-part/:dynamic-part"---- */}
         <Route path="/friend/:friendId" element={<FriendDetail></FriendDetail>}></Route>
+
         <Route path='/about' element={<About />}></Route>
 
         {/* this last position . when match not any link then this path work. */}
