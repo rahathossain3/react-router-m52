@@ -11,7 +11,11 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
+
+      {/* routes added ------------ */}
       <Routes>
+        {/* every routes has a single route */}
+        {/*---------- Route path = "path name"  element ={<component name/>}></Route>--------- */}
         <Route path="/" element={<Home />}></Route>
         <Route path='/friends' element={<Friends />}></Route>
         <Route path='/about' element={<About />}></Route>

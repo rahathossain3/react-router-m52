@@ -41,6 +41,9 @@
 
     <div className="App">
       <h1>Welcome to my fancy Routing website</h1>
+      
+<!-- every routes has a single route -->
+
       <Routes>
 <!-------------- Route path = "path name"  element ={<component name/>}></Route> ------>
         <Route path="/" element={<Home />}></Route>
