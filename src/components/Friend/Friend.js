@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 
 const Friend = (props) => {
     const { name, username, id } = props.friend;
-
+    // use for dynamic route
     let navigate = useNavigate();
-
+    //onclick function 
     const showFriendDetail = () => {
         const path = `/friend/${id}`
         navigate(path);
