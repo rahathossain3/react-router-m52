@@ -113,6 +113,49 @@ Video 6
 <!-- ------------ -->
 
 
+## Video 8
+
+
+### App.js
+{/* nested route ---------- */}
+            <Route path='/posts' element={<Posts></Posts>}>
+            <Route path=':postId' element={<PostDetail></PostDetail>}></Route>
+            </Route>
+
+### Posts.js        set outlet
+
+ {<div>
+            <h2>every post facebook ever had: {posts.length}</h2>
+            {
+                posts.map(post => <Link
+                    key={post.id}
+                    to={`/post/${post.id}`}
+                > {post.id}</Link>)
+            }
+            <Outlet></Outlet>}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
