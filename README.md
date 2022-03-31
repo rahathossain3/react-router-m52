@@ -72,3 +72,30 @@
 ## link between function and button 
 <button onClick={showFriendDetail}>{username} id: {id}</button>
 
+
+
+
+Video 6
+
+##  Route dynamic part
+
+<!--    path="/flexed-part/:dynamic-part" -->
+
+   <Route path="/friend/:friendId" element={<FriendDetail></FriendDetail>}></Route>
+
+## 2 way a link dynamic 
+
+1.
+   <Link to={'/friend/' + value}>Show detail</Link>;
+
+2.
+   <Link to={`/friend/${value}`}>Show detail</Link>;
+
+### ........ params
+  
+   const params = useParams();
+   const { friendId } = useParams();
+
+### return code 
+   <h2>This is Detail about Dosto: {friendId} </h2>
+
